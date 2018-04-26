@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PoorTraderCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unit Risk %" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBA-fg-WER">
+                                <rect key="frame" x="270" y="70" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="hFQ-UM-RtB"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uGH-Z2-c6i"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="valueChanged" id="yMv-E3-nDj"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Equity" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-VH-b8e">
+                                <rect key="frame" x="16" y="70" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="4jt-bG-22Y"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LTs-Be-SiL"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="valueChanged" id="gSW-rK-67Y"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXQ-4y-X1o">
+                                <rect key="frame" x="170" y="108" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="updatePrice:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2TQ-bc-tOI"/>
+                                    <action selector="updatePrice:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nq5-X2-aby"/>
+                                    <action selector="updatePrice:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="lpM-tx-fHe"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shares" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U48-9G-E3M">
+                                <rect key="frame" x="16" y="108" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="updatePrice:" destination="BYZ-38-t0r" eventType="valueChanged" id="JOP-Xw-Qd4"/>
+                                    <action selector="updateShares:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ece-XQ-kKs"/>
+                                    <action selector="updateShares:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="nKl-b6-dki"/>
+                                    <action selector="updateShares:" destination="BYZ-38-t0r" eventType="valueChanged" id="oIa-Rn-MHt"/>
+                                </connections>
+                            </textField>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REC-lT-3Ft">
+                                <rect key="frame" x="16" y="160" width="343" height="301"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Risk %" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-Qf-mPA">
+                                <rect key="frame" x="170" y="70" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="valueChanged" id="GfL-Od-L9K"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="bgC-tF-ox9"/>
+                                    <action selector="updateCPR:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="nF3-Ue-Rgq"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayTextView" destination="REC-lT-3Ft" id="GeO-rG-nhb"/>
+                        <outlet property="equityTextField" destination="SgP-VH-b8e" id="UoL-wp-tfc"/>
+                        <outlet property="totalRiskTextField" destination="ckq-Qf-mPA" id="3V6-b9-dxS"/>
+                        <outlet property="unitRiskTextField" destination="RBA-fg-WER" id="SAW-Zb-OpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
